@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <label for="pilihan">Choose ur choice</label>
+        <select name="pilihan" id="pilihan">
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+        </select>
+        <button id="button" type="submit" onclick="pilih()">Submit</button>
+        <div class="card-main">
+            <div class="card-me">
+                <img src="" alt="" id="choice-me">
+                <h1>YOU</h1>
+            </div>
+            <img src="assets/vs.png" alt="vs" class="versus"> 
+            <div class="card-bot">
+                <img src="" alt="" id="choice-bot">
+                <h1>COM</h1>
+            </div>
+        </div>
+    </div>
+    <div class="card-ress">    
+            <div class="card-result" id="card-result"></div>
+    </div>
+    
+<script src="app.js"></script>
+</body>
+</html>
