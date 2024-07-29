@@ -25,15 +25,25 @@ if(hasilPilih == "paper"){
 console.log(`pilihan anda ${hasilPilih}`)
 
 if(bot  == hasilPilih){
-         document.getElementById('card-result').innerHTML = 'DRAW'
-       }else if(bot == "scissors" && hasilPilih == "rock" || bot == "paper" && hasilPilih == "scissors" || bot == "rock" && hasilPilih == "paper"){
-         document.getElementById('card-result').innerHTML = 'CONGRATS, YOU WIN!!'
-        }else{
-         document.getElementById('card-result').innerHTML = 'OH NOO.. YOU LOSE!!'
+    document.getElementById('card-result').innerHTML = 'DRAW'
+    let prize = document.getElementById('hadiah')
+    prize.display = "none" 
+}else if(bot == "scissors" && hasilPilih == "rock" || bot == "paper" && hasilPilih == "scissors" || bot == "rock" && hasilPilih == "paper"){
+    document.getElementById('card-result').innerHTML = 'CONGRATS, YOU WIN!!'
+    let prize = document.getElementById('hadiah')
+    prize.innerText = 'AMBIL HADIAHNYA'
+    prize.display = "block" 
+}else{
+    document.getElementById('card-result').innerHTML = 'OH NOO.. YOU LOSE!!'
+    let prize = document.getElementById('hadiah')
+    prize.display = "none" 
 }
 
 
 }
 ///
+
+
+
 
 

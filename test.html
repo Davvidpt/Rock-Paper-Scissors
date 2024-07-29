@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <label for="input">keydown</label>
+        <input type="text" id="keydown" name="note">
+        <button type="submit" id="button">subbmit</button>
+    </form>
+        <ul id="notes">
+
+        </ul>
+        <script>
+            // let input = document.querySelector('#keydown')
+            // let liNote = document.querySelector('#notes')
+            // let submit = document.getElementById('button')
+
+            // submit.addEventListener('click' , (e) => {
+            //   e.preventDefault()
+            //   let createNotes = input.value;
+            //   let newList = document.createElement('li')
+            //   newList.innerText = createNotes
+            //   liNote.append(newList)
+            //   input.value = ''
+
+            // })
+            // setTimeout(function(){
+            //     document.querySelector('#button').style.backgroundColor = "red"
+            //     setTimeout(function(){
+            //     document.querySelector('#button').style.backgroundColor = "blue"
+            //     setTimeout(function(){
+            //     document.querySelector('#button').style.backgroundColor = "green"
+            // },3000)
+            // },3000)
+            // },3000)
+
+
+
+            //cal
+            searchMovieApp('naruto', function(movies){
+                saveToDb(movies , function(){
+                    
+                })
+            })
+</script>
+   
+</body>
+</html> 
